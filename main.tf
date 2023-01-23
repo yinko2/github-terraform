@@ -1,12 +1,12 @@
 // Store Terraform Backend State on S3 Bucket
 terraform {
   backend "s3" {
-    bucket         = "terraform-backend-state-amk-152"
+    bucket         = "terraform-backend-state-wkh"
     key            = "github/backend-state"
     region         = "ap-southeast-1"
     dynamodb_table = "terraform_state_locks"
     encrypt        = true
-    profile        = "yinko"
+    profile        = "wkh"
   }
 
   required_providers {
@@ -22,7 +22,7 @@ provider "aws" {
   profile = "yinko"
   default_tags {
     tags = {
-      Project = "StockPOS"
+      Project = "GitHub"
     }
   }
 }

@@ -1,6 +1,6 @@
 variable "configs_bucket_name" {
   description = "Storage Bucket for Config files"
-  default     = "config-files-amk-152"
+  default     = "config-files-wkh"
 }
 
 variable "github_token" {
