@@ -19,7 +19,7 @@ terraform {
 // Define Provider and Region
 provider "aws" {
   region  = "ap-southeast-1"
-  profile = "yinko"
+  profile = "wkh"
   default_tags {
     tags = {
       Project = "GitHub"
