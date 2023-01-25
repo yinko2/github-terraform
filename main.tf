@@ -27,6 +27,18 @@ provider "aws" {
   }
 }
 
+// Define Provider and Region
+provider "aws" {
+  region  = "ap-south-1"
+  profile = "wkh"
+  alias   = "mumbai"
+  default_tags {
+    tags = {
+      Project = "GitHub"
+    }
+  }
+}
+
 provider "github" {
   token = var.github_token # or `GITHUB_TOKEN`
 }
